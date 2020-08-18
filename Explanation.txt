@@ -1,0 +1,51 @@
+You are given with three stones are on a number line at positions a, b, and c.
+Each turn, you pick up a stone at an endpoint (ie., either the lowest or highest position stone), and move it to an unoccupied position between those endpoints.
+Formally, let's say the stones are currently at positions a,b,c with a<b<c.  
+You pick up the stone at either position a or position c, and move that stone to an integer position k, with a < k < c and k != b.
+The game ends when you cannot make any more moves, ie. the stones are in consecutive positions.
+When the game ends, what is the minimum and maximum number of moves that you could have made? Return the answer as an length 2 array: answer = [minimum_moves, maximum_moves]
+
+Input Description:
+Three integers, a,b,c in a single line. (1<a,b,c<1000)
+
+description:
+Print the answer as an length 2 array: answer = [minimum_moves, maximum_moves].
+
+Sample Input:
+1 2 5
+
+Sample Output:
+1 2
+
+Explanation:
+The numbers 1,2 is alreafy in consecutive and we move 5 to 3rd position which is the maximum move and 5 to 4 is the minimum move.
+
+Sample Input:
+12 22 34
+
+Sample Output:
+2 20
+
+Sample Input:
+56 125 678
+
+Sample Output:
+2 620
+
+Sample Input:
+77 111 112
+
+Sample Output:
+1 33
+
+Sample Input:
+88 99 999
+
+Sample Output:
+2 909
+
+Sample Input:
+997 998 999
+
+Sample Output:
+0 0
